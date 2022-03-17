@@ -28,7 +28,7 @@ pipeline {
                         ownerName: 'nagapoornima',
                         appName: 'andriod',  
                         pathToApp: 'app/build/outputs/apk/release/app-release-unsigned.apk',
-                        distributionGroups: 'andriod-group'
+                        distributionGroups: 'andriodg'
            }
        }
     }
