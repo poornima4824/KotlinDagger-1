@@ -22,15 +22,15 @@ pipeline {
                  archiveArtifacts artifacts: '**/*.apk', fingerprint: true, onlyIfSuccessful: true
             }
         }
-       // stage('Deploy') {
-          // steps {
-            //   appCenter apiToken: 'c0e58abf7f9ff3ea91da3b3572f49a81ad89edbc',
-              //          ownerName: 'nagapoornima',
-                //        appName: 'andriod',  
-                  //      file: 'app/build/outputs/apk/release/app-release-unsigned.apk',
-                    //    distributionGroups: 'andriod-group'
-           //}
-       //}
+        stage('Deploy') {
+           steps {
+               appCenter apiToken: 'c0e58abf7f9ff3ea91da3b3572f49a81ad89edbc',
+                        ownerName: 'nagapoornima',
+                        appName: 'andriod',  
+                        file: 'app/build/outputs/apk/release/app-release-unsigned.apk',
+                        distributionGroups: 'andriod-group'
+           }
+       }
     }
 }
 
