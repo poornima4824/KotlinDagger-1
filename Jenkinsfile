@@ -29,8 +29,8 @@ pipeline {
             //            appName: 'andriod',  
                //         pathToApp: 'app/build/outputs/apk/release/app-release-unsigned.apk',
                  //       distributionGroups: 'andriodg'
-           }
-       }
+          // }
+       //}
     }
 }
 
